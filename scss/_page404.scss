@@ -1,5 +1,5 @@
 .container404 { 
-    background: $black3; width: 100%;  float: left; padding:7rem 0;  @include fCC(); 
+    background: $black3; width: 100%; min-height: calc(100vh - 165px);  float: left; padding:0;  @include fCC(); 
     .container404-inner { 
         width:95%; max-width: 450px; margin: 0 auto; float:none;
         img { width: 100%; float: left;  }

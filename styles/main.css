@@ -4549,8 +4549,9 @@ template {
 .container404 {
   background: #020202;
   width: 100%;
+  min-height: calc(100vh - 165px);
   float: left;
-  padding: 7rem 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4623,7 +4624,8 @@ template {
   background: #020202;
   width: 100%;
   float: left;
-  padding: 3rem 0 5rem 0;
+  min-height: calc(100vh - 165px);
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4718,7 +4720,7 @@ template {
   width: 140px;
   float: right;
 }
-.thankswrap .thankswrap-inner .thanks_cont aside span {
+.thankswrap .thankswrap-inner .thanks_cont aside a {
   position: relative;
   width: 100%;
   float: left;
@@ -4735,11 +4737,11 @@ template {
   overflow: hidden;
   text-decoration: none;
 }
-.thankswrap .thankswrap-inner .thanks_cont aside span b {
+.thankswrap .thankswrap-inner .thanks_cont aside a b {
   position: relative;
   z-index: 2;
 }
-.thankswrap .thankswrap-inner .thanks_cont aside span:after {
+.thankswrap .thankswrap-inner .thanks_cont aside a:after {
   content: "";
   z-index: 1;
   position: absolute;
@@ -4750,7 +4752,7 @@ template {
   background-color: #4BC500;
   transition: all 0.4s ease-out;
 }
-.thankswrap .thankswrap-inner .thanks_cont aside span:hover:after {
+.thankswrap .thankswrap-inner .thanks_cont aside a:hover:after {
   left: 0;
   transition: all 0.4s ease-in;
 }
