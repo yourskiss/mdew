@@ -63,7 +63,7 @@ function formvalidation()
         $("#address").addClass('participate-border');
         return false;
     }
-    else if($("#entrytype").val() == null || $("#entrytype").val() == '' || $("#entrytype").val() == 0)
+    else if($("#entrytype").length == 1 && $("#entrytype").val() == null || $("#entrytype").val() == '' || $("#entrytype").val() == 0)
     {
         $("#entrytype_errormsg").show().html('Please select entery type');
         $("#entrytype").addClass('participate-border');
@@ -75,13 +75,13 @@ function formvalidation()
         $("#fearconquered").addClass('participate-border');
         return false;
     }
-    else if($("#entrytype").val() == 'photo' && $("#uploadphoto").val() == '')
+    else if($("#uploadphoto").length == 1 && $("#entrytype").val() == 'photo' && $("#uploadphoto").val() == '')
     {
         $("#uploadphoto_errormsg").show().html('Please select photo');
         $("#uploadphoto").addClass('participate-border');
         return false;
     }
-    else if($("#entrytype").val() == 'video' && $("#uploadvideo").val() == '')
+    else if($("#uploadvideo").length == 1 && $("#entrytype").val() == 'video' && $("#uploadvideo").val() == '')
     {
         $("#uploadvideo_errormsg").show().html('Please select video');
         $("#uploadvideo").addClass('participate-border');
