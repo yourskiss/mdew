@@ -1,0 +1,20 @@
+.msgcontainer { 
+    display:none; z-index:9; position: fixed; left: 0; top: 0; height: 100%; width: 100%; 
+    article { display:block; z-index:1; position: fixed; left: 0; top: 0; height: 100%; width: 100%; background-color: $black; background:#000000E0;  }
+    section { 
+        display: block;  z-index:2;  position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); width: 95%; max-width:380px; height: auto;  max-height: 90%; background:$white;   border-radius:0; margin:0 auto; padding:2rem;  
+        aside { 
+            width: 100%; float: left; text-align: center; margin:0 0 1rem 0;
+            img { width: 35px; display: inline-block; margin: 0 auto; }
+        } 
+        h2 { width: 100%; float: left; text-align: center; color:$black6; line-height: 1; font-size:16px; @include latobold();  }
+        h3 { width: 100%; float: left; margin:0.5rem 0 1rem 0; text-align: center; color:$black7; line-height: 1; font-size:14px; @include latomedium(); }
+        p { 
+            width: 100%; float: left; text-align: center; 
+           span { float: none; width: 120px; display: inline-block; margin: 0 auto; padding:0.8rem 1.5rem; background-color: $green4;  @include latosemibold();  line-height: 1; font-size: 16px; font-weight: 400; color:$white;  text-align: center; @include outT(); cursor: pointer; 
+            &:hover { background-color: $green;  @include inT(); }
+            }
+        }
+    }
+ }
+ 

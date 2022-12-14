@@ -1,0 +1,51 @@
+
+.footer { 
+    @include fCS(); background-color: $black2; width: 100%;  float: left; padding:0.9rem 0; 
+    .footer-insider { 
+        @include fBC(); width:95%; max-width: 1256px; margin: 0 auto; float:none;
+        p { float: left; width:50%; text-align: left; color: $white; @include latoregular(); font-size: 12px; }
+        ul { 
+            float: right; width:50%;  @include fEC(); 
+            li { 
+                list-style: none; display: inline-block; margin: 0; color: $white; @include latoregular(); font-size: 12px; 
+                a {  
+                    color: $white; @include tdn(); @include outT(); 
+                    &:hover { color: $green; @include inT(); }
+                }
+            }
+        }
+    }
+}
+ 
+
+@media only screen and (max-width:1565px) 
+{
+ 
+    
+}
+
+
+@media only screen and (max-width:1255px) 
+{
+ 
+    
+}
+ 
+@media only screen and (max-width:1023px) 
+{
+ 
+    
+}
+
+@media only screen and (max-width:599px) 
+{
+ 
+    
+}
+
+
+@media only screen and (max-width:479px) 
+{
+ 
+    
+}

@@ -1,0 +1,58 @@
+.header { 
+    z-index: 2; position:fixed; left: 50%; top: 0; transform: translateX(-50%); @include fCC();  background-color: $black; width: 100%; max-width: 1600px; height: 122px;  
+    .headerInsider { 
+        @include fBC(); width: 95%;max-width: 1256px;margin: 0 auto;float:none;
+        .logo { width:184px; float: left; }
+        .headerRight { 
+            @include fEC();  width: auto; float:right; 
+            ul { 
+                @include fCC(); width: auto; float: left; margin-right: 1rem;
+                li { 
+                    list-style: none; margin: 0 0.5rem; display: inline-block;
+                    a { 
+                        float: left; @include outT(); @include tdn(); background-color: $white; border-radius: 50%; width: 28px; height: 28px; line-height: 28px; font-size: 14px; font-weight: 400; color:$black;  text-align: center;
+                        &:hover { background-color: $green2; color:$white;  @include inT(); }
+                    }
+                }
+            }
+            span { 
+               padding: 1rem 1.5rem; background-color: $green4;  @include latosemibold();  line-height: 1; font-size: 16px; font-weight: 400; color:$white;  text-align: center; @include outT(); cursor: pointer; 
+                &:hover { background-color: $green;  @include inT(); }
+            }
+        }
+    }
+    
+}
+ 
+
+@media only screen and (max-width:1565px) 
+{
+ 
+    
+}
+
+
+@media only screen and (max-width:1255px) 
+{
+ 
+    
+}
+ 
+@media only screen and (max-width:1023px) 
+{
+ 
+    
+}
+
+@media only screen and (max-width:599px) 
+{
+ 
+    
+}
+
+
+@media only screen and (max-width:479px) 
+{
+ 
+    
+}

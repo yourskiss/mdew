@@ -1,0 +1,43 @@
+.otpcontainer { 
+    display:none; z-index:9; position: fixed; left: 0; top: 0; height: 100%; width: 100%; 
+    article { display:block; z-index:1; position: fixed; left: 0; top: 0; height: 100%; width: 100%; background-color: $black; background:#000000E0;  }
+    section { 
+        display: block;  z-index:2;  position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); width: 95%; max-width:440px; height: auto;  max-height: 90%; background:$white;   border-radius:0; margin:0 auto; padding:3rem 2rem;
+        .otpback { 
+            z-index:2;  position:absolute; left:2rem; top:2rem; font-size: 30px; color: $black; font-weight:500; line-height: 1; @include outT(); cursor: pointer;
+            &:hover {  color: $green;  @include inT(); }
+        }
+        aside { 
+            width: 100%; float: left; text-align: center; margin:0 0 1rem 0;
+            img { width: 53px; display: inline-block; margin: 0 auto; }
+        } 
+        h2 { width: 100%; float: left; text-align: center; color:$black6; line-height: 1; font-size:16px; @include latobold();  }
+        h3 { 
+            width: 100%; float: left; margin:0.5rem 0 1rem 0; text-align: center; color:$black7; line-height: 1; font-size:14px; @include latomedium(); 
+            span { @include latosemibold();  }
+        }
+        .fourdigitotp {
+            float: left; width: 100%; margin: 0; padding: 0; text-align: center; 
+            div { 
+                width: 220px; height: 45px; margin: 0 auto; float: none; padding: 0; display: inline-block; overflow: hidden; 
+                h6 { 
+                    left: 0; position: sticky; 
+                    input[type='text'] { margin: 0; padding:0 0 0 16px; letter-spacing:45px; border: 0; outline: none; width: 250px; min-width: 250px;  background: none; background-image: linear-gradient(to left, #EBEBEB 85%, rgba(222, 222, 222, 0) 0%);background-position: bottom; background-size:60px 45px;background-repeat: repeat-x; background-position-x: 45px; font-size: 22px; line-height:45px;    color: $black !important; @include latosemibold(); }
+                }
+            }
+        }
+        p { display: none; width: 100%; float: left; margin:0.5rem 0 0 0; text-align: center; color:$red2; line-height: 1; font-size:12px; @include latomedium();  }
+        h4 { 
+            width: 100%; float: left; margin:1rem 0 0 0; text-align: center; color:$black2; line-height: 1; font-size:14px; @include latomedium(); 
+            span {  color:$black; @include latobold();  } 
+        }
+        h5 { 
+            display: none; width: 100%; float: left; margin:1.5rem 0 0 0; text-align: center; color:$black2; line-height: 1; font-size:14px; @include latomedium(); 
+            span { 
+               margin-left: 0.5rem; cursor: pointer; color: $blue; @include inT(); @include tdu();
+                &:hover { color: $green; @include outT(); }
+            }
+         }
+    }
+ }
+ 

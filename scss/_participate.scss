@@ -1,0 +1,66 @@
+.participatewrap { 
+    background: $black3; width: 100%;  float: left; padding:3rem 0 5rem 0;  @include fCS(); 
+    .participate-inner { 
+        width:95%; max-width: 1256px; margin: 0 auto; float:none;
+        .participate-heading { 
+            width: 100%;  float: left; margin: 0 0 4rem 0;
+            h2 { margin: 0 0 2rem 0; width: 100%; float: left; text-align: center; @include fCS();  @include cutthecrap(); color: $white; font-size: 34px; }
+            ul { 
+                width: 100%; float: left; @include fCS();  text-align: center;
+                li { 
+                    position: relative; width:180px; list-style: none; display: inline-block; margin:0; text-align: center;
+                    span { display: inline-block; background: url('../images/step_icon_bg.jpg') no-repeat center center; background-size: 100% 100%; width: 34px; height: 34px; line-height: 34px; font-size: 18px; color: $white; @include latobold; text-align: center; }
+                    p { margin:0.8rem 0 0 0; width:100%; float:left; text-align:center; line-height: 1; font-size: 14px; color: $white; @include latosemibold();  }
+                    aside { z-index: 2; position: absolute; left:-65px; top: 17px; height: 1px; width: 140px; background: none; float: left; border-bottom:dashed 1px $white; }
+                    &.line { width: 10px; position: relative; }
+                }
+            }
+        }
+        .participate-body { 
+            width: 100%;  float: left; @include fBC();  background: $black4 url('../images/participate-form-bg.png') no-repeat center right; background-size: cover;
+            .participate-img { 
+                width: 30%;  float: left;
+                .participate-img-desktop { display: block; width: 100%;  float: left; }
+                .participate-img-mobile { display:none;  width: 100%;  float: left; }
+            }
+            .participate-form { 
+                @include fBS(); flex-wrap: wrap; width: 70%; padding:1rem 2.5%; float: left; 
+                .participate-field { 
+                    float: left; margin-top: 1rem; margin-bottom: 1rem;
+                    &.pfield33 { width: 32%; }
+                    &.pfield50 { width: 48%; }
+                    &.pfield67 { width: 66%; }
+                    &.pfield100 { width: 100%; }
+                    p {width: 100%;  float: left; margin:0 0 0.4rem 0; text-align: left; @include latomedium(); color: $white2; font-size: 14px; }
+                    .participate-errormsg {display: none; width: 100%;  float: left; margin: 0.4rem 0 0 0; text-align: left; @include latomedium(); color: $red; font-size: 12px;  }
+                    .participate-input { width: 100%; float: left; background-color: $white; padding:0.8rem; margin:0; border: 0; outline: 0; text-align: left;  @include latomedium(); color: $black5; font-size: 12px; }
+                    .participate-select { width: 100%; float: left; background-color: $white; padding:0.8rem; margin:0; border: 0; outline: 0; text-align: left;  @include latomedium(); color: $black5; font-size: 12px; text-indent: 2px; text-overflow: '';background: #fff url(../images/down-arrow.png) no-repeat; background-position: right 7px center; appearance: none; }
+                    input[type="checkbox"] { display: none; }
+                    .participate-border { border: solid 1px $red; }
+                    .participate-agreeterm { position: relative; width: 100%; float: left; padding:0 0 0 24px; margin:0; cursor: pointer; text-align: left;  @include latomedium(); color: $white; font-size: 14px; }
+                    .participate-agreeterm:before{ content: ''; position: absolute; left: 0; top: 0; z-index: 1; background:$black2; border-radius:0; outline: none; float: left; width: 14px; height: 14px; border: solid 1px $white; }
+                    input[type="checkbox"]:checked + .participate-agreeterm:before{ background:$blue; border-color: $blue;  }
+                    .participate-agreeterm:after{ content: ''; position: absolute; left: 2px; top: 3px; z-index: 2; opacity: 0; transform: rotate(-45deg); background:none; border-radius:0; outline: none; float: left; width:9px; height:4px; border-left: solid 2px $white;  border-bottom: solid 2px $white; }
+                    input[type="checkbox"]:checked + .participate-agreeterm:after{ opacity:1; }
+                    .participate-agreeterm a { margin:0 0.2rem; color: $blue; @include outT(); @include tdu(); }
+                    .participate-agreeterm a:hover { color: $white; @include tdn();  @include inT(); }
+                    .participate-file { display: none; }
+                    .participate-file-label { width: 100%; float: left; background-color: $white; margin:0; border: 0; outline: 0; cursor: pointer;  }
+                    .participate-name { display:none; padding:0.8rem; text-align: center;  @include latosemibold(); color: $black5; font-size: 12px; white-space: nowrap;overflow: hidden;text-overflow: ellipsis; }
+                    .participate-choose { display: block; width: 40%; float: left; padding:0.8rem 0.4rem; background-color: $green; text-align: center;  @include latoregular(); color: $white; font-size: 12px; }
+                    .participate-info { display: block; width:60%; float: left; padding:0.8rem 0.4rem; background-color: $white; text-align: center;  @include latoregular(); color: $black5; font-size: 12px; }
+                    .participate-submit { 
+                        float: left; padding:0.8rem 1.5rem; background-color: $green4;  @include latosemibold();  line-height: 1; font-size: 16px; font-weight: 400; color:$white;  text-align: center; @include outT(); cursor: pointer; 
+                        &:hover { background-color: $green;  @include inT(); }
+                        &.disabaled { background-color:$gray; color:$white;  user-select: none; pointer-events: none; }
+                    }
+
+                }
+                 
+            }
+            
+        }
+    }
+
+}
+ 
