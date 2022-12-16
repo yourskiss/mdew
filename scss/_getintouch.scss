@@ -1,9 +1,9 @@
 
 .getintouchcontainer { 
     display:none; z-index:9; position: fixed; left: 0; top: 0; height: 100%; width: 100%; 
-    article { display:block; z-index:1; position: fixed; left: 0; top: 0; height: 100%; width: 100%; background-color: $black; background:#000000E0;  }
+    article { display:block; z-index:1; position: fixed; left: 0; top: 0; height: 100%; width: 100%; background-color: $black8; background:#000000E0;  }
     section { 
-        display: block;  z-index:2;  position:absolute; left:50%; top:50%; transform: translate(-50%, -45%); width: 95%; max-width:560px; height: auto;  max-height: 90%; background:$black url('../images/participate-form-bg.png') no-repeat center center; background-size: cover;   border-radius:0; margin:0 auto; padding:3rem 2rem; 
+        display: block;  z-index:2;  position:absolute; left:50%; top:50%; transform: translate(-50%, -45%); width: 95%; max-width:560px; height: auto;  max-height: 90%; background:$black8 url('../images/participate-form-bg.png') no-repeat center center; background-size: cover;   border-radius:0; margin:0 auto; padding:3rem 2rem; 
         aside { 
             z-index: 3; position: absolute;right:0;top:-20px; width: 24px; height: 24px; border-radius:0; padding:0; background:none; border: none; cursor: pointer; 
             span { 

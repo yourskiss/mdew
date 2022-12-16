@@ -18,7 +18,7 @@
     <!-- header start -->
     <header class="header">
         <div class="headerInsider">
-            <img class="logo" src="images/logo.png" alt="logo" />
+            <a href="/"><img class="logo" src="images/logo.png" alt="logo" /></a>
             <div class="headerRight">
                 <ul>
                     <li><a href="https://www.youtube.com/user/MountainDewIndia?app=desktop" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
@@ -52,17 +52,17 @@
                 <h2>PARTICIPATE AND WIN</h2>
                 <ul>
                     <li>
-                        <span>1</span>
+                        <span><img src="images/step_icon1.png" alt="step 1" /></span>
                         <p>Fill in your details</p>
                     </li>
                     <li class="line"><aside></aside></li>
                     <li>
-                        <span>2</span>
+                        <span><img src="images/step_icon2.png" alt="step 2" /></span>
                         <p>Upload your entry</p>
                     </li>
                     <li class="line"><aside></aside></li>
                     <li>
-                        <span>3</span>
+                        <span><img src="images/step_icon3.png" alt="step 3" /></span>
                         <p>Stand a chance to win</p>
                     </li>
                 </ul>
@@ -100,6 +100,7 @@
                             <option value="0" disabled selected>Select</option>
                             <option value="photo">Photo</option>
                             <option value="video">Video</option>
+                            <option value="text">Text</option>
                         </select>
                         <span class="participate-errormsg" id="entrytype_errormsg">Please Select your entry type</span>
                     </div>
@@ -110,9 +111,8 @@
                     </div>
                     <div class="participate-field pfield33" id="entrytype_photo" style="display: none;">
                         <p>Upload your photo*</p>
-                        <input class="participate-file" type="file" name="uploadphoto" id="uploadphoto" placeholder="Upload your photo" accept="image/*"  />
+                        <input class="participate-file" type="file" name="uploadphoto" id="uploadphoto" placeholder="Upload your photo" accept="image/jpg, image/jpeg, image/png"  />
                         <label for="uploadphoto" class="participate-file-label">
-                            <aside class="participate-name" id="uploadphoto_name"></aside>
                             <span class="participate-choose" id="participate-choose-photo">Choose File</span>
                             <span class="participate-info" id="participate-info-photo">Size : 5MB Max</span>
                         </label>
@@ -120,9 +120,8 @@
                     </div>
                     <div class="participate-field pfield33" id="entrytype_video" style="display: none;">
                         <p>Upload your video*</p>
-                        <input class="participate-file" type="file" name="uploadvideo" id="uploadvideo" placeholder="Upload your video" accept="video/*" />
+                        <input class="participate-file" type="file" name="uploadvideo" id="uploadvideo" placeholder="Upload your video" accept="video/mp4" />
                         <label for="uploadvideo" class="participate-file-label">
-                            <aside class="participate-name" id="uploadvideo_name"></aside>
                             <span class="participate-choose" id="participate-choose-video">Choose File</span>
                             <span class="participate-info" id="participate-info-video">Size : 50MB Max</span>
                         </label>

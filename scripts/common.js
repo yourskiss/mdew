@@ -232,9 +232,8 @@ $("#entrytype").change(function()
     // debugger;
     $("#uploadphoto_errormsg, #uploadvideo_errormsg").hide().html("");
     $("#uploadphoto, #uploadvideo").val('');
-    $("#participate-choose-photo, #participate-info-photo, #participate-choose-video, #participate-info-video").show();
-    $("#uploadphoto_name, #uploadvideo_name").hide().text('');
-    
+    $("#participate-info-photo").text('Size : 5 MB');
+    $(" #participate-info-video").text('Size : 50 MB');
 
     var val = $(this).val()
     if(val == "photo")
@@ -246,6 +245,11 @@ $("#entrytype").change(function()
     {
         $("#entrytype_photo").hide();
         $("#entrytype_video").show();
+    }
+    else if(val == "text")
+    {
+        $("#entrytype_photo").hide();
+        $("#entrytype_video").hide();
     }
     else 
     {
@@ -265,23 +269,20 @@ $("#uploadphoto").change(function (e)
     {
         $("#uploadphoto_errormsg").show().html("File size must be less than 5 MB");
         $("#uploadphoto").val('');
-        $("#participate-choose-photo, #participate-info-photo").show();
-        $("#uploadphoto_name").hide().text('');
+        $("#participate-info-photo").text('Size : 5 MB');
         return false;
     }
     else if ($.inArray(extension, validFileExtensions) == -1) 
     {
-        $("#uploadphoto_errormsg").show().html("Allow only jpg/jpeg/png.");
+        $("#uploadphoto_errormsg").show().html("Allow only jpg/jpeg/png image.");
         $("#uploadphoto").val('');
-        $("#participate-choose-photo, #participate-info-photo").show();
-        $("#uploadphoto_name").hide().text('');
+        $("#participate-info-photo").text('Size : 5 MB');
         return false;
     }
     else 
     {
         $("#uploadphoto_errormsg").hide().html("");
-        $("#participate-choose-photo, #participate-info-photo").hide();
-        $("#uploadphoto_name").show().text(fileName);
+        $("#participate-info-photo").text(fileName);
         return true;
     }
 });
@@ -294,28 +295,25 @@ $("#uploadvideo").change(function (e)
 {
     var fileName = e.target.files[0].name;
     var extension = $(this).val().split('.').pop().toLowerCase();
-    var validFileExtensions = ['mp4', 'WEBM', 'MOV','WMV','MKV','MPEG-2',];
+    var validFileExtensions = ['mp4'];
     if (e.target.files[0].size > 52428800) 
     {
         $("#uploadvideo_errormsg").show().html("File size must be less than 50 MB");
         $("#uploadvideo").val('');
-        $("#participate-choose-video, #participate-info-video").show();
-        $("#uploadvideo_name").hide().text('');
+        $("#participate-info-video").text('Size : 50 MB');
         return false;
     }
     else if ($.inArray(extension, validFileExtensions) == -1) 
     {
-        $("#uploadvideo_errormsg").show().html("Allow only video file.");
+        $("#uploadvideo_errormsg").show().html("Allow only mp4 video.");
         $("#uploadvideo").val('');
-        $("#participate-choose-video, #participate-info-video").show();
-        $("#uploadvideo_name").hide().text('');
+        $("#participate-info-video").text('Size : 50 MB');
         return false;
     }
     else 
     {
         $("#uploadvideo_errormsg").hide().html("");
-        $("#participate-choose-video, #participate-info-video").hide();
-        $("#uploadvideo_name").show().text(fileName);
+        $("#participate-info-video").text(fileName);
         return true;
     }
 });
