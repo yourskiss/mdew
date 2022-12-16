@@ -17,3 +17,35 @@
         }
     }
 }
+
+
+
+@media only screen and (max-width:1255px) 
+{
+ .container404 {  
+    min-height: calc(100vh - 132px); 
+ }
+
+}
+@media only screen and (max-width:599px) 
+{
+    .container404 {  
+        padding: 2rem 0; min-height: calc(100vh - 140px); 
+        .container404-inner { 
+             max-width:300px;
+            p { margin: 1.5rem 0; font-size: 12px; line-height: 24px; }
+            aside { 
+                a { width: 138px; height:36px;  font-size: 14px;  }
+            }
+        }
+     }
+}
+
+@media only screen and (max-width:479px) 
+{
+    .container404 {  
+        .container404-inner { 
+            max-width:280px;
+        }
+     }
+}

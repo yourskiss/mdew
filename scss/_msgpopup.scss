@@ -22,4 +22,22 @@
         }
     }
  }
- 
+
+
+
+@media only screen and (max-width:1023px) 
+{
+    .msgcontainer { 
+        section { 
+            max-width:300px; 
+            aside { 
+                img { width: 46px;  }
+            } 
+            h2 { font-size:14px; }
+            h3 {  margin:0.7rem 0 1.5rem 0;  font-size:12px; }
+            p { 
+               span { width: 84px; height:36px; font-size: 14px; }
+            }
+        }
+     }
+}

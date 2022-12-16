@@ -13,6 +13,41 @@ $(window).on('load', function()
 });
 /* onLoad === end */
 
+/* show/hide menu === start */
+$("#menubar").click(function(e)
+{
+    e.preventDefault();
+    e.stopPropagation();
+    if($(this).hasClass("active"))
+    {
+        $("#menubar").removeClass("active");
+        $("#menucontainer").slideUp(300);
+    }
+    else 
+    {
+        $("#menubar").addClass("active");
+        $("#menucontainer").slideDown(300);
+    }
+});
+$('body').click(function(e) // close on click body
+{    
+    if($(window).width() < 499)
+    {
+        if (e.target != $('#menubar') || e.target != $('#menucontainer')) 
+        {
+            $("#menubar").removeClass("active");
+            $("#menucontainer").slideUp(300);
+        }
+    }
+});
+/* show/hide menu === end */
+
+
+ 
+
+
+
+
 
 /* validation === start */
 function formvalidation()
@@ -364,17 +399,12 @@ $(function($)
             [
                 {
                     breakpoint: 1023,
-                    settings: { slidesToShow:3, slidesToScroll: 3, arrows: false }
+                    settings: { centerPadding: '5px', slidesToShow:3, slidesToScroll: 3, arrows: false }
                 },
                 {
                     breakpoint: 599,
-                    settings: { slidesToShow:2, slidesToScroll: 2, arrows: false }
-                },
-                {
-                    breakpoint: 479,
-                    settings: { slidesToShow:1, slidesToScroll: 1, arrows: false }
+                    settings: { centerPadding: '5px', slidesToShow:2, slidesToScroll: 2, arrows: false }
                 }
-
             ]
         });
     }

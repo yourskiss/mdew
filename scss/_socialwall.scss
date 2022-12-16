@@ -1,5 +1,5 @@
 .socialwall { 
-    background: $black3 url('../images/socialwall-bg.png') no-repeat center bottom; background-size: 100% auto; width: 100%;  float: left; padding: 0 0 120px 0;  @include fCS(); 
+    background: $black3 url('../images/socialwall-bg-web.png') no-repeat center bottom; background-size: 100% auto; width: 100%;  float: left; padding: 0 0 120px 0;  @include fCS(); 
     .socialwall-insider { 
         width:95%; max-width: 1256px; margin: 0 auto; float:none;
         h2 { 
@@ -33,3 +33,29 @@
 .socialslider.slick-slider .slick-dots li { position: relative; display: inline-block; width:10px; height:10px; margin: 0 4px; padding: 0; border: none; cursor: pointer; background:$white; border-radius:50%; }
 .socialslider.slick-slider .slick-dots li.slick-active { transform: scale(1); background:$green2; }
 .socialslider.slick-slider .slick-dots li button { display: none; }
+
+
+@media only screen and (max-width:1023px) 
+{
+    .socialslider.slick-slider .slick-slide { margin: 0 5px;   }
+    .socialslider.slick-slider .slick-list { padding:0 15px 0 0 !important; }
+    .socialslider.slick-slider .slick-track { @include fBS();  }
+    .socialslider.slick-slider .slick-slide { @include fCS(); margin: 0 5px; }
+}
+
+@media only screen and (max-width:479px) 
+{
+    .socialwall { 
+        background: $black3 url('../images/socialwall-bg-mob.png') no-repeat center bottom; background-size: 100% auto; padding: 0 0 70px 0;
+        .socialwall-insider { 
+            h2 { 
+                padding: 0; flex-direction: column; @include fSS(); 
+                b { font-size: 24px; } 
+                span { margin-top: 0.5rem; width: 100%; text-align: left;font-size:14px;  }
+            }
+        }
+    }
+    
+
+}
+ 

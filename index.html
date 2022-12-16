@@ -19,14 +19,19 @@
     <header class="header">
         <div class="headerInsider">
             <a href="/"><img class="logo" src="images/logo.png" alt="logo" /></a>
-            <div class="headerRight">
-                <ul>
-                    <li><a href="https://www.youtube.com/user/MountainDewIndia?app=desktop" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/mountaindewindia/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://twitter.com/mountaindewin?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/mountaindewin/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-                <span onclick="showhidegetintouch('show');"><b>Get in touch</b></span>
+            <aside class="menubar" id="menubar">
+                <span></span><span></span><span></span>
+            </aside>
+            <div class="headerRight" id="menucontainer">
+                <div class="headercontainer">
+                    <ul>
+                        <li><a href="https://www.youtube.com/user/MountainDewIndia?app=desktop" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/mountaindewindia/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/mountaindewin?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/mountaindewin/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <span onclick="showhidegetintouch('show');"><b>Get in touch</b></span>
+                </div>
             </div>
         </div>
     </header>
@@ -37,7 +42,7 @@
     <!-- banner start -->
     <section class="banner">
         <img class="banner-desktop" src="images/banner-desktop.png" alt="banner" />
-        <img class="banner-mobile" src="images/banner-desktop.png" alt="banner" />
+        <img class="banner-mobile" src="images/banner-mobile.png" alt="banner" />
     </section>
     <!-- banner end -->
 
@@ -106,7 +111,7 @@
                     </div>
                     <div class="participate-field pfield67">
                         <p>A fear you have conquered and how?*</p>
-                        <input class="participate-input" type="text" name="fearconquered" id="fearconquered" placeholder="A fear you have conquered and how?" />
+                        <textarea role="" cols="" class="participate-textarea" name="fearconquered" id="fearconquered" placeholder="A fear you have conquered and how?"></textarea>
                         <span class="participate-errormsg" id="fearconquered_errormsg">Please Enter A fear you have conquered and how?*</span>
                     </div>
                     <div class="participate-field pfield33" id="entrytype_photo" style="display: none;">
@@ -129,7 +134,7 @@
                     </div>
                     <div class="participate-field pfield100">
                         <input type="checkbox" name="agreeterm" id="agreeterm" value="agreeterm" onclick="agreeterms()" />
-                        <label for="agreeterm" class="participate-agreeterm">By clicking submit, I agree to the <a href="javascript:void(0);">Terms & Conditions</a> and <a href="javascript:void(0);">Privacy Policy</a></label>
+                        <label for="agreeterm" class="participate-agreeterm">By clicking submit, I agree to the <span onclick="window.open('https://contact.pepsico.com/mtndew/terms-conditions','_blank');">Terms & Conditions</span> and <span onclick="window.open('https://contact.pepsico.com/mtndew/privacy-policy','_blank');">Privacy Policy</span></label>
                         <span class="participate-errormsg" id="agreeterm_errormsg">Please Upload your video</span>
                     </div>
                     <div class="participate-field pfield100">

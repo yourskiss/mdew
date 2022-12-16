@@ -2,7 +2,7 @@
     display:none; z-index:9; position: fixed; left: 0; top: 0; height: 100%; width: 100%; 
     article { display:block; z-index:1; position: fixed; left: 0; top: 0; height: 100%; width: 100%; background-color: $black; background:#000000E0;  }
     section { 
-        display: block;  z-index:2;  position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); width: 95%; max-width:440px; height: auto;  max-height: 90%; background:$white;   border-radius:0; margin:0 auto; padding:3rem 2rem;
+        display: block;  z-index:2;  position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); width: 95%; max-width:440px; height: auto;  max-height: 95%; background:$white;   border-radius:0; margin:0 auto; padding:3rem 2rem;
         .otpback { 
             z-index:2;  position:absolute; left:2rem; top:2rem; font-size: 30px; color: $black; font-weight:500; line-height: 1; @include outT(); cursor: pointer;
             &:hover {  color: $green;  @include inT(); }
@@ -41,3 +41,21 @@
     }
  }
  
+
+@media only screen and (max-width:1023px) 
+{
+    .otpcontainer { 
+        section { 
+            max-width:300px; padding:2rem 1rem;
+            .otpback { left: 1rem; top: 2rem; font-size: 24px; }
+            aside { 
+                margin:0 0 1rem 0;
+                img { width:49px; }
+            } 
+            h2 { font-size:14px; }
+            h3 { margin:0.5rem 0 1rem 0; font-size:12px; }
+            h4 { margin:1rem 0 0 0; font-size:12px;  }
+            h5 { margin:1.5rem 0 0 0;  font-size:12px; }
+        }
+     }
+}

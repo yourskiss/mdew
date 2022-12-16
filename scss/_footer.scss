@@ -1,6 +1,5 @@
-
 .footer { 
-    @include fCS(); background-color: $black2; width: 100%;  float: left; padding:0.9rem 0; 
+    @include fCC(); background-color: $black2; width: 100%;  height: 42px;  float: left; padding:0; 
     .footer-insider { 
         @include fBC(); width:95%; max-width: 1256px; margin: 0 auto; float:none;
         p { float: left; width:50%; text-align: left; color: $white; @include latoregular(); font-size: 12px; }
@@ -16,36 +15,19 @@
         }
     }
 }
- 
-
-@media only screen and (max-width:1565px) 
-{
- 
-    
-}
-
-
-@media only screen and (max-width:1255px) 
-{
- 
-    
-}
- 
-@media only screen and (max-width:1023px) 
-{
- 
-    
-}
+  
 
 @media only screen and (max-width:599px) 
 {
- 
+    .footer { 
+         height: 70px;
+        .footer-insider { 
+            @include fCS(); flex-wrap: wrap; flex-direction: column-reverse; 
+            p {  width:100%; text-align: center; }
+            ul { width:100%;  margin-bottom:0.8rem; @include fCS(); }
+        }
+    }
     
 }
 
-
-@media only screen and (max-width:479px) 
-{
  
-    
-}
